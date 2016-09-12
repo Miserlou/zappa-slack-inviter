@@ -1,11 +1,22 @@
 from flask import Flask, render_template, request
 import requests
 
-app = Flask(__name__)
+##
+# Configuration
+#
+# Change these values to your team's information!
+# Get your token from here: https://api.slack.com/docs/oauth-test-tokens
+##
 
 TEAM_NAME = "Zappa"
 SLACK_TOKEN = "xoxp-Z4PP4Z4PP4-Z4PP4Z4PP4-Z4PP4Z4PP4-Z4PP4Z4PP4"
 SLACK_DOMAIN = "zappateam.slack.com"
+
+##
+# Application
+##
+
+app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
