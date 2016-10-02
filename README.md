@@ -11,10 +11,10 @@ A teeny tiny server-less Slack channel inviter.
 ```
 git clone https://github.com/Miserlou/zappa-slack-inviter
 cd zappa-slack-inviter
-virtualenv env; source env/bin/active; pip install -r requirements.txt
+virtualenv env && source env/bin/activate && pip install -r requirements.txt
 ```
 
-Then add your [token](https://api.slack.com/docs/oauth-test-tokens) into `app.py` using your favorite text editor, then `zappa init` and `zappa deploy`.
+Then add your [token](https://api.slack.com/docs/oauth-test-tokens) and channel settings into `app.py` using your favorite text editor, then `zappa init` and `zappa deploy`.
 
 ## Custom Domains
 
